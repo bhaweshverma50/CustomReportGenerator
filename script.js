@@ -10,7 +10,7 @@ function uploadFile(e) {
   inputBtn.disabled = true;
   uploadBtn.style.backgroundColor = "#ccc";
   try {
-    var res = fetch("http://127.0.0.1:5000/upload", {
+    var res = fetch("https://reportgen-api.herokuapp.com/upload", {
       method: "POST",
       body: formData,
     });
